@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+body {
+    height: 100vh;
+    background-image: url(./imagem/tetris.jpg);
+}
+
+.container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-container {
+    margin-bottom: 16px;
+    width: 280px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.buttons-container button {
+    border: none;
+    background: #1e2ede;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+    height: 32px;
+    transition: filter 0.2s;
+}
+
+.buttons-container button:hover {
+    filter: brightness(0.8);
+
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.grid {
+    width: 200px;
+    height: 400px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+
+}
+
+.mini-grid {
+    width: 120px;
+    height: 120px;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.mini-grid div {
+    width: 20px;
+    height: 20px;
+}
+
+
+.content-right h2 {
+    font-size: 32px;
+    margin-top: 24px;
+}
+
+.content-right h3 {
+    font-size: 32px;
+    margin-top: 24px;
+}
+
+.shapePainted {
+    background: red;
+    border: 2px solid black;
+}
+
+.orange {
+    background: linear-gradient(to right, #b34700, #ff751a, #ff944d);
+}
+
+.pink {
+    background: linear-gradient(to right, #cc0099, #ff80ff, #ff99ff);
+}
+
+.blue {
+    background: linear-gradient(to right, #0033cc, #99b3ff);
+}
+
+.red {
+    background: linear-gradient(to right, #ff3300, #ff5c33, #ff8566);
+}
+
+.yellow {
+    background: linear-gradient(to right, #ffcc00, #ffeb99);
+}
